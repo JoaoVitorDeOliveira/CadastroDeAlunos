@@ -11,6 +11,11 @@ Eu quero ser capaz de adicionar, buscar, atualizar e remover cadastros de alunos
 
 O sistema vai ser feito em `Java` com o Framework `Spring Boot`, a principio não terá UI para o usuario(Front-end), o sistema vai receber requisições `REST` no formato `JSON` para ser uma aplicação `Java para internet` ~que é `Javascrpit`~.
 
+Utilize o https://start.spring.io para criar a estrutura da API em `Maven`, em `Group: com.api` e `Artifact: cadastroAluno` com as seguintes dependencias:
+ - Spring Boot DevTools (Para recarregar as mudancas no codigo sem derrubar o projeto)
+ - Spring Web Starter (Para incluir funções REst)
+ - H2 Base (Bando de Dados em Memoria)
+
 O sistema terá 3 Entidades com as seguintes nomeclaturas:
   - `AlunoEntidade.java`
   - `InstituçãoEntidade.java`
