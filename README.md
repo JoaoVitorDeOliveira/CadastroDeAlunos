@@ -18,7 +18,7 @@ Utilize o https://start.spring.io para criar a estrutura da API em `Maven`, em `
 
 O sistema terá 3 Entidades com as seguintes nomeclaturas:
   - `AlunoEntidade.java`
-  - `InstituçãoEntidade.java`
+  - `InstituiçãoEntidade.java`
   - `DisciplinasEntidade.java`
   
 Atributos necessários da Classe `AlunoEntidade.java` junto com seus respectivos `getters` e `setters`:
@@ -31,7 +31,7 @@ Atributos necessários da Classe `AlunoEntidade.java` junto com seus respectivos
         | idDaInstituição (int)
         | idDaDisciplina (int)
   
-Atributos necessários da Classe `InstituçãoEntidade.java` junto com seus respectivos `getters` e `setters`:
+Atributos necessários da Classe `InstituiçãoEntidade.java` junto com seus respectivos `getters` e `setters`:
 
         | idDaInstuição (int)
         | nomeDaInstuição (String)
@@ -150,10 +150,16 @@ Vamos comecar apenas com `AlunoController.java`:
  
  ```
  
+Para fazermos a comunicação REst com a API que iremos criar, utilizaremos o software Postman:
+https://www.getpostman.com
+
+Ele irá simular o nosso Front-end enviando os `JSONs` de nossas requisições acima.
+ 
  
 O sistema terá 3 interfaces Services com as seguintes nomeclaturas:
   - `AlunoService.java`
   - `InstituçãoService.java`
   - `DisciplinasService.java`
 
-Todas elas extendendo a interface `JPARepository` para fazer o `Autowired` nas Classes `Controllers`
+Todas elas extendendo a interface `JPARepository` para fazer o `Autowired` nas Classes `Controllers`.
+
